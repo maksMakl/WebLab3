@@ -1,21 +1,31 @@
-.container, .stripe, .container-right {
-    float: left;
+body {
+    display: flex;
+    flex-direction: row;
 }
 
-header, footer {
-    position: relative;
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-header h1, footer h1 {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-header h1 {
-    right: 0;
+footer {
+    display: flex;
+    align-items: center;
 }
 
 .container {width: 80%}
 .stripe {width: 5%}
 .container-right {width: 15%}
+
+@media (max-width: 700px) {
+    .container {width: 80%}
+    .stripe {width: 1%}
+    .container-right {width: 19%}
+}
+
+@media (max-width: 450px) {
+    .container {width: 75%}
+    .stripe {width: 1%}
+    .container-right {width: 24%}
+}

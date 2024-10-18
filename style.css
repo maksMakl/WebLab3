@@ -37,7 +37,6 @@ header h1 {
     margin: 0 20px 0 0;
     background-color: white;
     width: fit-content;
-    font-size: 3vmax;
 }
 
 footer {
@@ -90,7 +89,8 @@ nav a {
 }
 
 main img {
-    width: 640px;
+    max-width: 640px;
+    width: 80%;
     height: auto;
     flex-shrink: 0;
 }
@@ -108,4 +108,14 @@ main img {
 
 ol li {
     overflow: visible;
+}
+
+@media (max-width: 550px) {
+    header h1, footer h1 {
+        font-size: 5.5vw;
+    }
+
+    nav a {
+        font-size: 5vw;
+    }
 }
