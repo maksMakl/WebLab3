@@ -1,0 +1,21 @@
+.container, .stripe, .container-right {
+    float: left;
+}
+
+header, footer {
+    position: relative;
+}
+
+header h1, footer h1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header h1 {
+    right: 0;
+}
+
+.container {width: 80%}
+.stripe {width: 5%}
+.container-right {width: 15%}
